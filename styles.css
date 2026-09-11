@@ -376,6 +376,10 @@ h1 {
         font-size: 18px;
     }
 
+    .price list{
+        padding-left: -15px;
+    }
+    
     .price_list h2 {
         font-size: 38px;
     }
@@ -479,6 +483,10 @@ h1 {
         min-height: unset;
     }
 
+    .price list{
+        padding-left: -15px;
+    }
+    
     .price_list h2 {
         font-size: 30px;
     }
@@ -621,6 +629,10 @@ h1 {
         font-size: 14px;
     }
 
+    .price list{
+        padding-left: -15px;
+    }
+    
     .price_list h2 {
         font-size: 24px;
     }
