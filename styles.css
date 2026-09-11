@@ -1,0 +1,682 @@
+*  {
+    box-sizing: border-box;
+    color: rgb(190, 114, 60);
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(240, 237, 229);
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(233, 209, 175);
+    height: 11vh;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    padding-left: 15%;
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.header .contacts {
+    padding-right: 15%;
+    gap: 4%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.contacts p {
+    margin: 0;
+    padding-right: 1vh;
+}
+
+.contacts img {
+    height: 4vh;
+    width: auto;
+    display: block;
+}
+
+.branches_button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5vh;
+}
+
+.branches_button a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.first_page {
+    padding-top: 11vh;
+    display: flex;
+    margin: auto;
+    height: 89%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first_page img {
+    height: 100%;
+    width: 60%;
+}
+
+.first_page_text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_page_text p,
+.first_page_text h1 {
+    padding-top: 6vh;
+}
+
+.first_page_text p{
+    font-size: 20px;
+}
+
+
+.second_page{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+.price_list{
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.price_list li{
+    margin-top: 5px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(120 54 4);
+}
+
+.price_list li p{
+    margin: 0;
+}
+
+.price_list h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.why_aikune{
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+}
+
+.why_aikune ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why_aikune li{
+    margin-top: 10px;
+}
+
+.specialists{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    max-width: 96%;
+    margin: 3% auto;
+}
+
+.specialists_card {
+    display: flex;
+    background: rgb(233, 209, 175);
+    border-radius: 12px;
+    padding: 2%;
+    border: 2px solid rgb(212, 175, 55);
+}
+
+.specialists_card div{
+    padding-left: 2%;
+}
+
+.specialists_card div p{
+    font-size: 17px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: zoom-out;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    user-select: none;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5%;
+    max-width: 98%;
+    margin: 5% auto;
+
+}
+
+.review_card{
+    padding: 2%;
+    border: 2px solid rgb(212, 175, 55);
+    background: rgb(233, 209, 175);
+    border-radius: 12px;
+}
+
+.reviewer_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewer_info h1{
+    font-size: 35px;
+}
+
+.reviewer_info img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.review_text p{
+    font-size: 20px;
+}
+
+.promotion{
+    margin: 0 auto;
+    height: 25%;
+    width: 98%;
+    background: rgb(233, 209, 175);
+    border: 2px solid rgb(212, 175, 55);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.promotion h1{
+    margin: 0;
+}
+
+.promotion_button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(212, 175, 55);
+    background: rgb(232, 195, 75);
+    text-decoration: none;
+}
+
+.promotion_text{
+    margin: 20px 0 25px 0;
+    text-align: center;
+}
+
+.branches{
+    margin-top: 3%;
+    display: flex;
+    height: 85%;
+    gap: 1%;
+}
+
+.branch_card{
+    height: 100%;
+    width: 48.5%;
+    border: 2px solid rgb(212, 175, 55);
+    background-color: rgb(233, 209, 175);
+    border-radius: 12px;
+}
+.branch_card_main_content{
+    padding-left: 3%;
+}
+
+.branch_card img{
+    border-radius: 12px;
+    width: 100%;
+    height: 60%;
+}
+.branch_card_buttons a{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(212, 175, 55);
+    background: rgb(232, 195, 75);
+    text-decoration: none;
+    margin-top: 1%;
+}
+
+.footer{
+    display: grid;
+    justify-content: center;
+}
+
+
+.footer h1{
+    text-align: center;
+}
+
+.footer a{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid rgb(212, 175, 55);
+    background: rgb(232, 195, 75);
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 30px;
+    justify-self: center;
+}
+
+/* адаптивность под планшеты и ноутбуки (1024 px и выше) */
+
+@media (max-width: 1024px) {
+
+    .header .logo {
+        padding-left: 5%;
+    }
+
+    .header .contacts {
+        padding-right: 5%;
+        gap: 3%;
+    }
+
+    .branches_button {
+        padding-right: 3%;
+    }
+
+    .first_page_text p {
+        font-size: 18px;
+    }
+
+    .price_list h2 {
+        font-size: 38px;
+    }
+
+    .why_aikune {
+        font-size: 24px;
+    }
+
+    .specialists {
+        max-width: 98%;
+    }
+
+    .specialists_card div p {
+        font-size: 15px;
+    }
+
+    .reviewer_info h1 {
+        font-size: 28px;
+    }
+
+    .review_text p {
+        font-size: 17px;
+    }
+
+    .footer a {
+        font-size: 24px;
+    }
+}
+
+/* адаптивность под планшеты и большие телефоны (768 px и ниже) */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        min-height: 11vh;
+        flex-wrap: wrap;
+        padding: 10px 4%;
+        row-gap: 8px;
+    }
+
+    .header .logo {
+        padding-left: 0;
+        height: 40px;
+    }
+
+    .header .contacts {
+        padding-right: 0;
+        margin-left: auto;
+    }
+
+    .header .branches_button{
+        width: 70%;
+    }
+
+    .header .branches_button a{
+        padding-left: 70%;
+    }
+
+    .contacts p {
+        display: none;
+    }
+
+    .branches_button {
+        padding-right: 0;
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    .first_page {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+        padding-top: calc(11vh + 20px);
+    }
+
+    .first_page img {
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    .first_page_text {
+        width: 100%;
+        order: 2;
+    }
+
+    .first_page_text h1 {
+        font-size: 28px;
+    }
+
+    .first_page_text p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 3vh;
+    }
+
+    .second_page {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+    }
+
+    .price_list h2 {
+        font-size: 30px;
+    }
+
+    .price_list li span,
+    .price_list li p {
+        font-size: 15px;
+    }
+
+    .why_aikune {
+        font-size: 20px;
+        margin-top: 30px;
+        height: auto;
+        min-height: unset;
+    }
+
+    .specialists {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+    }
+
+    .specialists_card {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        min-height: unset;
+    }
+
+    .specialists_card img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .specialists_card div {
+        padding-left: 0;
+        padding-top: 12px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 8px;
+        max-width: 96%;
+    }
+
+    .gallery_container {
+        margin-top: 220px;
+    }
+
+    .gallery img {
+        height: 160px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+    }
+
+    .reviewer_info h1 {
+        font-size: 22px;
+    }
+
+    .reviewer_info img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .review_text h2 {
+        font-size: 18px;
+    }
+
+    .review_text p {
+        font-size: 15px;
+    }
+
+    .promotion {
+        margin-top: 200px;
+        height: auto;
+        min-height: unset;
+        width: 92%;
+        padding: 20px 4%;
+        font-size: 16px;
+    }
+
+    .branches {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .branch_card {
+        width: 100%;
+    }
+
+    .branch_card img {
+        height: 200px;
+    }
+
+    .branch_card_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 3% 3% 3%;
+    }
+
+    .branch_card_buttons a {
+        display: block;
+        text-align: center;
+    }
+
+    .footer a {
+        font-size: 20px;
+    }
+}
+
+/* адаптивность под узкие телефоны (480 px и ниже) */
+
+@media (max-width: 480px) {
+
+    .header .logo {
+        height: 32px;
+    }
+
+    .contacts img {
+        height: 3vh;
+    }
+
+    .branches_button {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .first_page_text h1 {
+        font-size: 22px;
+    }
+
+    .first_page_text p {
+        font-size: 14px;
+    }
+
+    .price_list h2 {
+        font-size: 24px;
+    }
+
+    .price_list li span,
+    .price_list li p {
+        font-size: 13px;
+    }
+
+    .why_aikune {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 0 4%;
+    }
+
+    .specialists_card div p {
+        font-size: 14px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img {
+        height: 130px;
+    }
+
+    .reviewer_info h1 {
+        font-size: 18px;
+    }
+
+    .review_text p {
+        font-size: 14px;
+    }
+
+    .promotion_text {
+        font-size: 14px;
+    }
+
+    .footer h1 {
+        font-size: 20px;
+    }
+
+    .footer a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+
+/**
+rgb(233, 209, 175) bejeviy
+rgb(240, 237, 229) molochniy
+rgb(240, 240, 218) kremoviy
+rgb(190, 114, 60) svetlo korichneviy
+rgb(212, 175, 55) zolotistiy
+**/
