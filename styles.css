@@ -357,55 +357,192 @@ h1 {
 
 /* адаптивность под планшеты и ноутбуки (1024 px и выше) */
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
+    .header {
+        height: auto;
+        min-height: 11vh;
+        flex-wrap: wrap;
+        padding: 10px 4%;
+        row-gap: 8px;
+    }
 
     .header .logo {
-        padding-left: 5%;
+        padding-left: 0;
+        height: 40px;
     }
 
     .header .contacts {
-        padding-right: 5%;
-        gap: 3%;
+        padding-right: 0;
+        margin-left: auto;
+    }
+
+    .header .branches_button{
+        width: 70%;
+    }
+
+    .header .branches_button a{
+        padding-left: 70%;
     }
 
     .branches_button {
-        padding-right: 3%;
-    }
-
-    .first_page_text p {
+        padding-right: 0;
+        padding-left: 30%;
         font-size: 18px;
     }
 
-    .price list{
-        padding-left: -15px;
-    }
-    
-    .price_list h2 {
-        font-size: 38px;
-    }
-
-    .why_aikune {
-        font-size: 24px;
+    .first_page {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+        padding-top: calc(11vh + 20px);
     }
 
-    .specialists {
-        max-width: 98%;
+    .first_page img {
+        width: 100%;
+        height: auto;
+        order: 1;
     }
 
-    .specialists_card div p {
-        font-size: 15px;
+    .first_page_text {
+        width: 100%;
+        order: 2;
     }
 
-    .reviewer_info h1 {
+    .first_page_text h1 {
         font-size: 28px;
     }
 
+    .first_page_text p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 3vh;
+    }
+
+    .second_page {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+    }
+
+    .price_list{
+        margin-left: -2.5%;
+    }
+
+    .price_list h2 {
+        font-size: 30px;
+    }
+
+    .price_list li span,
+    .price_list li p {
+        font-size: 15px;
+    }
+
+    .why_aikune {
+        font-size: 20px;
+        margin-top: 30px;
+        height: auto;
+        min-height: unset;
+    }
+
+    .specialists {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+    }
+
+    .specialists_card {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        min-height: unset;
+    }
+
+    .specialists_card img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .specialists_card div {
+        padding-left: 0;
+        padding-top: 12px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 8px;
+        max-width: 96%;
+    }
+
+    .gallery_container {
+        margin-top: 220px;
+    }
+
+    .gallery img {
+        height: 160px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+    }
+
+    .reviewer_info h1 {
+        font-size: 22px;
+    }
+
+    .reviewer_info img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .review_text h2 {
+        font-size: 18px;
+    }
+
     .review_text p {
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    .promotion {
+        margin-top: 200px;
+        height: auto;
+        min-height: unset;
+        width: 92%;
+        padding: 20px 4%;
+        font-size: 16px;
+    }
+
+    .branches {
+        flex-direction: column;
+        height: auto;
+        min-height: unset;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-top: -3%;
+    }
+
+    .branch_card {
+        width: 100%;
+    }
+
+    .branch_card img {
+        height: 600px;
+    }
+
+    .branch_card_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 3% 3% 3%;
+    }
+
+    .branch_card_buttons a {
+        display: block;
+        text-align: center;
     }
 
     .footer a {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
