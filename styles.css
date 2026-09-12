@@ -1,8 +1,9 @@
 *  {
     box-sizing: border-box;
     color: rgb(190, 114, 60);
-    font-family: "Doppio One", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -135,13 +136,17 @@ html, body {
     text-align: center;
     height: 100%;
     width: 100%;
-    font-size: 30px;
+}
+
+.why_aikuneh h2{
+    font-size: 40px;
 }
 
 .why_aikune ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
 
 .why_aikune li{
