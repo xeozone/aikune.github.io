@@ -169,6 +169,10 @@ html, body {
     border: 2px solid rgb(212, 175, 55);
 }
 
+.specialists_card img{
+    width: 60%;
+}
+
 .specialists_card div{
     padding-left: 2%;
 }
