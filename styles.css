@@ -76,7 +76,7 @@ html, body {
 
 .first_page img {
     height: 100%;
-    width: 60%;
+    width: 61%;
 }
 
 .first_page_text {
@@ -349,8 +349,7 @@ h1 {
     border: 2px solid rgb(212, 175, 55);
     background: rgb(232, 195, 75);
     text-decoration: none;
-    margin: 0 auto;
-    margin-bottom: 2%;
+    margin: 0 auto 3% auto;
     font-size: 30px;
     justify-self: center;
 }
@@ -394,7 +393,7 @@ h1 {
         flex-direction: column;
         height: auto;
         min-height: unset;
-        padding-top: calc(11vh + 20px);
+        padding-top: calc(8vh + 20px);
     }
 
     .first_page img {
@@ -504,7 +503,7 @@ h1 {
     }
 
     .promotion {
-        margin-top: 200px;
+        margin-top: 180px;
         height: auto;
         min-height: unset;
         width: 92%;
@@ -545,6 +544,7 @@ h1 {
         font-size: 20px;
     }
 }
+
 
 /* адаптивность под планшеты и большие телефоны (768 px и ниже) */
 
@@ -590,7 +590,7 @@ h1 {
         flex-direction: column;
         height: auto;
         min-height: unset;
-        padding-top: calc(11vh + 20px);
+        padding-top: calc(8vh + 20px);
     }
 
     .first_page img {
@@ -623,7 +623,7 @@ h1 {
     .price_list{
         margin-left: -2.5%;
     }
-    
+
     .price_list h2 {
         font-size: 30px;
     }
@@ -700,7 +700,7 @@ h1 {
     }
 
     .promotion {
-        margin-top: 200px;
+        margin-top: 180px;
         height: auto;
         min-height: unset;
         width: 92%;
@@ -769,7 +769,7 @@ h1 {
     .price_list{
         margin-left: -4.5%;
     }
-    
+
     .price_list h2 {
         margin-left: 10%;
         font-size: 24px;
@@ -822,12 +822,3 @@ h1 {
         padding: 8px 12px;
     }
 }
-
-
-/**
-rgb(233, 209, 175) bejeviy
-rgb(240, 237, 229) molochniy
-rgb(240, 240, 218) kremoviy
-rgb(190, 114, 60) svetlo korichneviy
-rgb(212, 175, 55) zolotistiy
-**/
